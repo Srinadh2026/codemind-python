@@ -1,0 +1,17 @@
+n=int(input())
+s=0
+s3=0
+s1=n*n
+while(n>0):
+    r=n%10
+    s=r+s*10
+    n=n//10
+s2=s*s
+while(s2>0):
+    r1=s2%10
+    s3=r1+s3*10
+    s2=s2//10
+if(s3==s1):
+    print(True)
+else:
+    print(False)
